@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+/*     Common    */
+
+body {
+  font-family: "Arial"、"Hiragino Sans"、"Hiragino Kaku Gothic ProN"、"Meiryo"、"sans-serif";
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: .7;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+  /* border: 2px solid red; */
+}
+
+.btn {
+  border: 1px solid black;
+  font-size: 0.75rem;
+  padding: 14px 36px;
+  color: inherit;
+}
+
+
+/*   Header    */
+
+#header {
+  background-image: url(mainvisual.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+#header .site-title {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+
+/*    Magazine   */
+
+#magazine {
+  text-align:center;
+  margin-top: 90px;
+}
+
+#magazine .flex-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+#magazine .flex-item .item {
+  width: 49%;
+  position: relative;
+}
+
+#magazine .flex-item .text {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  left: 0;
+  background: #666;
+  font-weight: bold;
+  color: #fff;
+  max-width: 290px;
+  padding: 15px 0;
+  margin: 0 auto;
+}
+
+#magazine .flex-item .item .title {
+  font-size: 1.25rem;
+}
+
+
+/*    Fashion   */
+
+#fashion {
+  height: 520px;
+  background-image: url(fashion.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  text-align: center;
+  /* border: 2px solid green; */
+  margin-top: 90px;
+  margin-bottom: 80px;
+}
+
+#fashion .btn {
+  display: block;
+  width: 70px;
+  margin: 40px auto 0;
+  color: inherit;
+}
+
+
+/*    Catalog & Antique   */
+
+.catalog-antique {
+  background: #eee;
+  padding: 60px 0;
+}
+
+.catalog-antique .flex-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.catalog-antique .flex-item .item {
+  width: 49%;
+  text-align: center;
+}
+
+.catalog-antique .flex-item img {
+  width: 100%;
+}
+
+.catalog-antique .flex-item p {
+  text-align: left;
+}
+
+#Antique .btn {
+  display: block;
+  width: 80px;
+  margin: 80px auto 0;
+}
+
+
+/*   Footer   */
+
+#footer {
+  background: #333;
+  font-size: .75rem;
+}
+
+#footer .flex-item {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#footer .flex-item .item {
+  width: 33%;
+  line-height: 2;
+}
+
+#footer .flex-item .item ul {
+  padding: 0;
+}
+
+#footer .item li::before {
+  content: "-";
+}
+
+#footer .flex-item .title {
+  font-weight: bold;
+}
+
+#footer .item:first-child {
+  padding: 60px 0;
+}
+
+#footer .copyright {
+  color: white;
+  text-align: center;
+  background: white;
+  color: inherit;
+  padding: 30px 0;
+}
+
+
+
+
+/*    SP   */
+
+@media (max-width: 896px) {
+
+/*    Magazine  */
+
+  #magazine .flex-item {
+    flex-direction: column;
+  }
+
+  #magazine .flex-item .item {
+    width: 100%;
+  }
+
+  /*   Fashion    */
+
+  #fashion {
+
+  }
+
+
+  /*   Catalog & Antique   */
+
+  .catalog-antique {
+    padding: 30px 0;
+  }
+
+  .catalog-antique .flex-item {
+    flex-direction: column;
+  }
+
+  .catalog-antique .flex-item .item {
+    width: 100%;
+  }
+
+
+  /*   Footer   */
+
+  #footer .flex-item {
+    flex-direction: column;
+  }
+
+  #footer .flex-item .item {
+    width: 100%;
+  }
+
+  #footer .flex-item ul {
+    padding: 0;
+  }
+
+
+  #footer .flex-item .item:first-child {
+    text-align: center;
+  }
+}
